@@ -1,0 +1,13 @@
+.img-style {
+  opacity: 0.8;
+}
+.img-style:hover {
+  opacity: 10;
+}
+
+.carousel-text {
+  text-decoration: underline;
+}
+.carousel-text:hover {
+  text-decoration: none;
+}
