@@ -1,0 +1,7 @@
+.active-color{
+    color: #FF6464;
+}
+.active-color:active{
+    font-size: 16px;
+    color: #FBF8F1;
+}

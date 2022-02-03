@@ -1,5 +1,7 @@
 import React from 'react';
 import Apartments from '../Apartments/Apartments';
+import BuySellBanner from '../BuySellBanner/BuySellBanner';
+import WhyUs from '../WhyUs/WhyUs';
 import './Home.css'
 
 const Home = () => {
@@ -103,7 +105,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <BuySellBanner className=""></BuySellBanner>
             <Apartments></Apartments>
+            <WhyUs></WhyUs>
         </div>
     );
 };

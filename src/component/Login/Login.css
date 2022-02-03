@@ -5,3 +5,9 @@
     background-position: center center;
     color:white;
 }
+
+.btn-grd{
+    background: #1572A1 ;
+    padding-left: 100px;
+    padding-right: 100px;
+}

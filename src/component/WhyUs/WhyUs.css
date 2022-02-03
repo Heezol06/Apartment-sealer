@@ -1,0 +1,10 @@
+.why-us{
+    color: white;
+    background-image: url(https://i.ibb.co/JkhPm83/Shiny-Overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.why-us-section:hover{
+    background: #000;
+    border-radius: 8px;
+}
