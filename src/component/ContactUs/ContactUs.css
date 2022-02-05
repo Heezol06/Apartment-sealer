@@ -1,0 +1,17 @@
+.primary-color1{
+    color:#FF6464
+}
+.primary-btn-1{
+    color:white;
+    background-color: #1572A1;
+}
+.Office-style{
+    position: relative;
+    left:10%;
+    opacity: .9;
+}
+.office-img{
+    background-image: url(https://i.ibb.co/Sy3NKjg/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

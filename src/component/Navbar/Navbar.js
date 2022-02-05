@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
+import useAuth from './../../Hooks/useAuth';
 const Navbar = () => {
+    const { logout, user } = useAuth()
+    console.log(user);
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -23,7 +26,15 @@ const Navbar = () => {
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn text-light" style={{ backgroundColor: "#FF6464" }} type="submit">Search</button>
+                        <button class="btn text-light me-3" style={{ backgroundColor: "#FF6464" }} type="submit">Search</button>
+
+                        {user.email ?
+                            <div className='d-flex align-items-center justify-content-center'>
+                                {/* <p>{user.displayName.slice(0, 8)}</p> */}
+                                <button class="btn text-light btn-danger" onClick={logout} type="submit"><i class="fas fa-sign-out-alt"></i></button>
+                                <p className='mb-0 primary-color1'>Logout</p>
+                            </div> :
+                            <Link to="/login"><button className='primary-btn-1 p-2 px-4 border-0'>Login</button></Link>}
                     </form>
                 </div>
             </div>

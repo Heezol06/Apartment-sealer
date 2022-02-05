@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button, Form } from 'react-bootstrap';
-import useFirebase from '../../../Hooks/useFirebase';
-import { useHistory } from 'react-router-dom';
+import { Form } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import useAuth from './../../../Hooks/useAuth';
 
 const Register = () => {
     const [registerData, setRegisterData] = useState({});
-    // const history = useHistory();
-    const { user, registerUser, isLoading, error } = useFirebase()
+    const navigate = useNavigate();
+    const { user, registerUser, isLoading, error } = useAuth()
     const handleOnBlur = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -22,7 +22,7 @@ const Register = () => {
             return
         }
         console.log(registerData);
-        registerUser(registerData.name, registerData.email, registerData.password);
+        registerUser(registerData.name, registerData.email, registerData.password, navigate);
 
         e.preventDefault();
     }
@@ -74,7 +74,7 @@ const Register = () => {
                             placeholder="Confirm Your Password"
                         />
                     </Form.Group>
-                    <button class="btn mb-4 border-0 text-light btn-grd" type="button">Register</button>
+                    <button class="btn mb-4 border-0 text-light btn-grd" type="submit">Register</button>
                     <p style={{ color: "#9AD0EC" }}>Already Have An Account?</p>
                     <NavLink to='/login' style={{ textDecoration: "none" }}><h6 style={{ color: "#1572A1", }}>login</h6></NavLink>
                 </Form>

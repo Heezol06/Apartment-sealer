@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+#map { position: absolute; top: 10%; left:50%; bottom: 0; width: 45%; height: 75%; }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

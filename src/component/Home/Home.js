@@ -105,7 +105,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <BuySellBanner className=""></BuySellBanner>
+            <BuySellBanner></BuySellBanner>
             <Apartments></Apartments>
             <WhyUs></WhyUs>
         </div>
