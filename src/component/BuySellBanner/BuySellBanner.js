@@ -10,7 +10,7 @@ const BuySellBanner = () => {
                         <img src="https://i.ibb.co/6ZgKTvp/statistics.png" className='text-light' style={{ width: "80px" }} alt="" />
                     </div>
                     <div>
-                        <Link className='text-light' to="/buyHome"><h3 className='text-light '>Looking For The New Home?</h3></Link>
+                        <Link className='text-light' to="/apartments"><h3 className='text-light '>Looking For The New Home?</h3></Link>
                         <p>10 new offers every day. 350 offers on site, trusted by a community of thousands of users.</p>
                     </div>
                 </div>

@@ -4,7 +4,6 @@ import './Navbar.css'
 import useAuth from './../../Hooks/useAuth';
 const Navbar = () => {
     const { logout, user } = useAuth()
-    console.log(user);
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -18,10 +17,13 @@ const Navbar = () => {
                             <Link className='active-color text-decoration-none me-4 fs-5' to="/home">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <Link className='active-color text-decoration-none me-4 fs-5' to="/login">Login</Link>
+                            <Link className='active-color text-decoration-none me-4 fs-5' to="/contactUs">Contact Us</Link>
                         </li>
                         <li class="nav-item">
-                            <Link className='active-color text-decoration-none me-4 fs-5' to="/contactUs">Contact Us</Link>
+                            <Link className='active-color text-decoration-none me-4 fs-5' to="/apartments">Apartments</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link className='active-color text-decoration-none me-4 fs-5' to="/myOrder">Orders</Link>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -30,7 +32,6 @@ const Navbar = () => {
 
                         {user.email ?
                             <div className='d-flex align-items-center justify-content-center'>
-                                {/* <p>{user.displayName.slice(0, 8)}</p> */}
                                 <button class="btn text-light btn-danger" onClick={logout} type="submit"><i class="fas fa-sign-out-alt"></i></button>
                                 <p className='mb-0 primary-color1'>Logout</p>
                             </div> :

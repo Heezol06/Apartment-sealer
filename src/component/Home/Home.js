@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Apartments from '../Apartments/Apartments';
 import BuySellBanner from '../BuySellBanner/BuySellBanner';
 import WhyUs from '../WhyUs/WhyUs';
@@ -100,7 +101,8 @@ const Home = () => {
                             <h2>FIND A PERFECT DREAM HOUSE</h2>
                             <h6>You Can Buy & Sale Your House From Here.</h6>
                             <p>Here You Can Find All Kind Of House</p>
-                            <p className="carousel-text">View All Property <i class="fas fa-long-arrow-alt-right"></i></p>
+                            <Link to="/apartments"> View All Apartments Here
+                                <i class="fas fa-long-arrow-alt-right"></i></Link>
                         </div>
                     </div>
                 </div>
