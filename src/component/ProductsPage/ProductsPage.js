@@ -8,7 +8,7 @@ const ProductsPage = () => {
     const [cart, setCart] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:7000/apartments`)
+        fetch(`https://still-ravine-04691.herokuapp.com/apartments`)
             .then(res => res.json())
             .then(data => {
                 setProducts(data)

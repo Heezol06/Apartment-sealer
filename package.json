@@ -45,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Heezol06/Apartment-sealer.git",
+  "author": "Heezol06 <shahriarrahmanheezol@gmail.com>",
+  "license": "MIT"
 }

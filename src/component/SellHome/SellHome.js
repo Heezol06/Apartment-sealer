@@ -21,7 +21,7 @@ const SellHome = () => {
             location: inputData.location, price: inputData.price, bedRooms: inputData.bedRooms, bathRooms: inputData.bathRooms,
             img1: inputData.image, description: inputData.description
         }
-        axios.post('http://localhost:7000/apartments', newApartmentData)
+        axios.post('https://still-ravine-04691.herokuapp.com/apartments', newApartmentData)
             .then(res => {
                 if (res.data.insertedId) {
                     // e.location.reload();

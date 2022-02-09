@@ -23,7 +23,7 @@ const BookingApartment = () => {
     const handleDataSubmit = e => {
         const orderData = { ...inputData }
         console.log(orderData);
-        fetch('http://localhost:7000/addOrderInfo', {
+        fetch('https://still-ravine-04691.herokuapp.com/addOrderInfo', {
             method: "POST",
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(orderData)
@@ -37,7 +37,7 @@ const BookingApartment = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:7000/apartments/${apartmentId}`)
+        fetch(`https://still-ravine-04691.herokuapp.com/apartments/${apartmentId}`)
             .then(res => res.json())
             .then(data => setApartmentDetails(data))
     }, [])

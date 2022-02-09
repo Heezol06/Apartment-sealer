@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
     const [process, setProcess] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:7000/create-payment-intent', {
+        fetch('https://still-ravine-04691.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

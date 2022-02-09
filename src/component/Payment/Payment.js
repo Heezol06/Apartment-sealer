@@ -12,7 +12,7 @@ const Payment = () => {
     const [order, setOrder] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:7000/orders/${ordersId}`)
+        fetch(`https://still-ravine-04691.herokuapp.com/orders/${ordersId}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [ordersId])
