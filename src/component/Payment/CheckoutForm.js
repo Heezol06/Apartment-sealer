@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const CheckoutForm = ({ order }) => {
 
-    const { price, userName, email, _id } = order;
+    const { price, userName } = order;
     const stripe = useStripe()
     const elements = useElements()
 
