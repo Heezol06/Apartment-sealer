@@ -89,19 +89,19 @@ const CheckoutForm = ({ order }) => {
                         },
                     }}
                 />
-                {process.true ? <div class="spinner-border text-danger" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                {process.true ? <div className="spinner-border text-danger" role="status">
+                    <span className="visually-hidden">Loading...</span>
                 </div> : <button type="submit" disabled={!stripe}>
                     Pay {price}
                 </button>}
             </form>
             {
-                error && <div class="alert alert-danger" role="alert">
+                error && <div className="alert alert-danger" role="alert">
                     {error}
                 </div>
             }
             {
-                success && <div class="alert alert-success" role="alert">
+                success && <div className="alert alert-success" role="alert">
                     {success}
                 </div>
             }

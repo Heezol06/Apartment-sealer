@@ -13,7 +13,7 @@ const Apartments = () => {
         <div className='container  '>
             <div className='row  py-5 '>
                 {
-                    apartments.map(apartment => <Apartment apartment={apartment}>
+                    apartments.map(apartment => <Apartment key={apartment._id} apartment={apartment}>
 
                     </Apartment>)
                 }

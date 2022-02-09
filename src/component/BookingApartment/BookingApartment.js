@@ -46,13 +46,13 @@ const BookingApartment = () => {
             <h4 className='primary-color1 text-decoration-underline'>Check Apartments Details And Place Your Order. </h4>
             <div className='d-flex my-5'>
                 <div className='col-lg-6 mx-auto'>
-                    <div class="card mb-3">
-                        <img src={apartmentDetails.img1} class="card-img-top" alt="..." />
-                        <div class="card-body">
-                            <h5 class="card-title"><span className='primary-color1 fw-bold'>Location: </span>{apartmentDetails.location}</h5>
-                            <p class="card-text"><span className='primary-color1 fw-bold'>About Our Apartment: </span> {apartmentDetails.description}</p>
-                            <p class="card-text"><span className='primary-color1 fw-bold'>Price: </span> {apartmentDetails.price}</p>
-                            <p class="card-text"><small class="text-muted">{apartmentDetails.location}</small></p>
+                    <div className="card mb-3">
+                        <img src={apartmentDetails.img1} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title"><span className='primary-color1 fw-bold'>Location: </span>{apartmentDetails.location}</h5>
+                            <p className="card-text"><span className='primary-color1 fw-bold'>About Our Apartment: </span> {apartmentDetails.description}</p>
+                            <p className="card-text"><span className='primary-color1 fw-bold'>Price: </span> {apartmentDetails.price}</p>
+                            <p className="card-text"><small className="text-muted">{apartmentDetails.location}</small></p>
                         </div>
                     </div>
                 </div>

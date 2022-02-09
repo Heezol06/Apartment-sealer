@@ -41,12 +41,12 @@ const ProductsPage = () => {
                     searchData.map(product => <div key={product._id} className="col-lg-4" style={{ backgroundColor: "#D6E5FA", width: "350px", marginRight: "20px", height: "340px", marginBottom: "30px", borderRadius: "10px" }}>
                         <div className='position-relative mt-3 mx-auto'>
                             <img src={product.img1} className='apartment-img' style={{ width: "300px", borderRadius: "7px" }} alt="" />
-                            <span class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">
+                            <span className="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger">
                                 -10%
                             </span>
                             <div className='overlay d-flex align-items-center justify-content-between'>
                                 <button className='text border-0 ' onClick={() => handelAddToCart(product)} style={{ backgroundColor: "#cdf2ff" }}>ADD TO CART </button>
-                                <i class="ms-5 fas fa-plus"></i>
+                                <i className="ms-5 fas fa-plus"></i>
                             </div>
                         </div>
                         <div className='d-flex justify-content-around'>
@@ -55,10 +55,10 @@ const ProductsPage = () => {
                         </div>
                         <div className='d-flex justify-content-around'>
                             <div className='d-flex align-items-center '>
-                                <p> <i class="fas fa-bed"></i> {product.bads}Beds</p>
+                                <p> <i className="fas fa-bed"></i> {product.bads}Beds</p>
                             </div>
                             <div className='d-flex align-items-center'>
-                                <p> <i class="fas fa-bath"></i> {product.baths}Baths</p>
+                                <p> <i className="fas fa-bath"></i> {product.baths}Baths</p>
                             </div>
                         </div>
                         <Link to={`/bookingApartment/${product._id}`}><button className='primary-btn-1 border-0 p-1 rounded'>Book This</button></Link>

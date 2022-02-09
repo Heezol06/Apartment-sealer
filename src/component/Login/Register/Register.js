@@ -74,7 +74,7 @@ const Register = () => {
                             placeholder="Confirm Your Password"
                         />
                     </Form.Group>
-                    <button class="btn mb-4 border-0 text-light btn-grd" type="submit">Register</button>
+                    <button className="btn mb-4 border-0 text-light btn-grd" type="submit">Register</button>
                     <p style={{ color: "#9AD0EC" }}>Already Have An Account?</p>
                     <NavLink to='/login' style={{ textDecoration: "none" }}><h6 style={{ color: "#1572A1", }}>login</h6></NavLink>
                 </Form>

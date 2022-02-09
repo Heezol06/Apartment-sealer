@@ -50,7 +50,7 @@ export const ContactUs = () => {
                     <p className='text-start'>Morbi mollis elit vitae elit molestie lobortis. Cras eu purus ipsum. Aliquam et ullamcorper nisl. Nam sem justo, sagittis sit amet sem at, mollis congue eros. Quisque vel mattis eros. Proin euismod massa id est finibus, rutrum ornare velit pellentesque. Ut arcu magna, interdum eget egestas eget, sagittis a libero. Donec felis tellus, vehicula at purus condimentum, hendrerit dictum odio. Vivamus et condimentum sapien.</p>
                     <div className='d-flex'>
                         <div className='d-flex justify-content-center align-items-center me-5'>
-                            <i class="fas fa-headset fa-4x"></i>
+                            <i className="fas fa-headset fa-4x"></i>
                             <div className='ms-4'>
                                 <p className='text-start'>Call us:</p>
                                 <h6>
@@ -96,7 +96,7 @@ export const ContactUs = () => {
                     <p className='text-start'>Etiam placerat, nunc et consequat ullamcorper, risus ligula luctus nibh, quis ultrices felis massa varius odio. Pellentesque feugiat mi congue vehicula pellentesque. Aliquam sagittis velit tellus, cursus porttitor turpis fringilla quis. Donec venenatis tincidunt sapien, at porta nisl consectetur ac. Aliquam maximus lectus id neque dignissim, nec molestie magna consequat. Sed convallis sem diam.</p>
                     <div className='d-flex'>
                         <div className='d-flex justify-content-center align-items-center me-5'>
-                            <i class="fas fa-headset fa-4x"></i>
+                            <i className="fas fa-headset fa-4x"></i>
                             <div className='ms-4'>
                                 <p className='text-start'>Call us:</p>
                                 <h6>
@@ -140,21 +140,21 @@ export const ContactUs = () => {
                 <div className="col-lg-5 bg-dark p-5 my-5 rounded shadow" style={{ marginRight: "100px" }}>
                     <h5 className='text-light'>Share Your FeedBack And Contact With US.</h5>
                     <form ref={form} onSubmit={sendEmail}>
-                        <div class="mb-3">
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i class="fas fa-user"></i></span>
-                                <input type="text" class="form-control" name="user_name" placeholder='First Name,Last Name*' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                        <div className="mb-3">
+                            <div className="input-group input-group-sm mb-3">
+                                <span className="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i className="fas fa-user"></i></span>
+                                <input type="text" className="form-control" name="user_name" placeholder='First Name,Last Name*' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                             </div>
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i class="fas fa-envelope"></i></span>
-                                <input type="email" class="form-control" name="user_email" placeholder='Your Email Address*' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                            <div className="input-group input-group-sm mb-3">
+                                <span className="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i className="fas fa-envelope"></i></span>
+                                <input type="email" className="form-control" name="user_email" placeholder='Your Email Address*' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                             </div>
-                            <div class="input-group input-group-sm mb-3">
-                                <span class="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i class="fas fa-phone-alt"></i></span>
-                                <input type="text" class="form-control" placeholder='Your Phone' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                            <div className="input-group input-group-sm mb-3">
+                                <span className="input-group-text" name="user_name" id="inputGroup-sizing-sm"><i className="fas fa-phone-alt"></i></span>
+                                <input type="text" className="form-control" placeholder='Your Phone' aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
                             </div>
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" name="message" placeholder='Your Message' id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
+                            <textarea className="form-control" name="message" placeholder='Your Message' id="exampleFormControlTextarea1" rows="3"></textarea>
                             <input type="submit" className="btn primary-btn-1 text-light mt-4" value="Send Message" />
                         </div>
                     </form>

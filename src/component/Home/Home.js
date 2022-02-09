@@ -8,11 +8,11 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://i.ibb.co/551s2zk/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash.jpg" class="d-block w-100 img-style" style={{ height: "700px" }} alt="..." />
-                        <div class="carousel-caption ">
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img src="https://i.ibb.co/551s2zk/nastuh-abootalebi-y-Wwob8kw-OCk-unsplash.jpg" className="d-block w-100 img-style" style={{ height: "700px" }} alt="..." />
+                        <div className="carousel-caption ">
                             <div className='container bg-white rounded d-flex justify-content-between p-4' style={{ color: "#1f6f8b" }}>
                                 <div>
                                     <img src="https://i.ibb.co/pf9WRq8/home.png" style={{ height: "50px", width: "50px" }} alt="" />
@@ -39,13 +39,13 @@ const Home = () => {
                                 <h2>FIND A PERFECT DREAM HOUSE</h2>
                                 <h6>You Can Buy & Sale Your House From Here.</h6>
                                 <p>Here You Can Find All Kind Of House</p>
-                                <p className="carousel-text">View All Property <i class="fas fa-long-arrow-alt-right"></i></p>
+                                <p className="carousel-text">View All Property <i className="fas fa-long-arrow-alt-right"></i></p>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="https://i.ibb.co/vL6QtHC/deborah-cortelazzi-g-REqu-CUXQLI-unsplash.jpg" class="d-block w-100 img-style" style={{ height: "700px" }} alt="..." />
-                        <div class="carousel-caption ">
+                    <div className="carousel-item">
+                        <img src="https://i.ibb.co/vL6QtHC/deborah-cortelazzi-g-REqu-CUXQLI-unsplash.jpg" className="d-block w-100 img-style" style={{ height: "700px" }} alt="..." />
+                        <div className="carousel-caption ">
                             <div className='container bg-white rounded d-flex justify-content-between p-4' style={{ color: "#1f6f8b" }}>
                                 <div>
                                     <img src="https://i.ibb.co/pf9WRq8/home.png" style={{ height: "50px", width: "50px" }} alt="" />
@@ -71,11 +71,11 @@ const Home = () => {
                             <h2>FIND A PERFECT DREAM HOUSE</h2>
                             <h6>You Can Buy & Sale Your House From Here.</h6>
                             <p>Here You Can Find All Kind Of House</p>
-                            <p className="carousel-text">View All Property <i class="fas fa-long-arrow-alt-right"></i></p>
+                            <p className="carousel-text">View All Property <i className="fas fa-long-arrow-alt-right"></i></p>
                         </div>
                     </div>
-                    <div class="carousel-item"> <img src="https://i.ibb.co/D7LfVVg/luke-van-zyl-ko-H7-IVuw-RLw-unsplash.jpg" class="d-block w-100 img-style" style={{ height: "700px", }} alt="..." />
-                        <div class="carousel-caption">
+                    <div className="carousel-item"> <img src="https://i.ibb.co/D7LfVVg/luke-van-zyl-ko-H7-IVuw-RLw-unsplash.jpg" className="d-block w-100 img-style" style={{ height: "700px", }} alt="..." />
+                        <div className="carousel-caption">
                             <div className='container bg-white rounded d-flex justify-content-between p-4 ' style={{ color: "#1f6f8b" }}>
                                 <div>
                                     <img src="https://i.ibb.co/pf9WRq8/home.png" style={{ height: "50px", width: "50px" }} alt="" />
@@ -102,7 +102,7 @@ const Home = () => {
                             <h6>You Can Buy & Sale Your House From Here.</h6>
                             <p>Here You Can Find All Kind Of House</p>
                             <Link to="/apartments"> View All Apartments Here
-                                <i class="fas fa-long-arrow-alt-right"></i></Link>
+                                <i className="fas fa-long-arrow-alt-right"></i></Link>
                         </div>
                     </div>
                 </div>

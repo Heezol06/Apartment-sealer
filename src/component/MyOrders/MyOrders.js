@@ -15,7 +15,7 @@ const MyOrders = () => {
     return (
         <div>
             <h1 className='primary-color1 text-decoration-underline my-3 mb-5'>All Of Your Orders.</h1>
-            <table class="table table-success table-striped">
+            <table className="table table-success table-striped">
                 <thead>
                     <tr>
                         <th scope="col">Order Name</th>

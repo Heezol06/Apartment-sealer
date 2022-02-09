@@ -6,8 +6,8 @@ const AdminRoute = ({ children, ...rest }) => {
     const { user, admin, isLoading } = useAuth();
     const location = useLocation();
     if (isLoading) {
-        return (<div class="spinner-border text-danger" role="status">
-            <span class="visually-hidden">Loading...</span>
+        return (<div className="spinner-border text-danger" role="status">
+            <span className="visually-hidden">Loading...</span>
         </div>)
     }
     if (user.email && admin) {
