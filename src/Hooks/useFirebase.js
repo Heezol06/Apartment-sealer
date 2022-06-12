@@ -8,7 +8,7 @@ const useFirebase = () => {
     const [user, setUser] = useState({})
     const [error, setError] = useState('')
     const [isLoading, setIsLoading] = useState(true);
-    const [admin, setAdmin] = useState(false);
+    // const [admin, setAdmin] = useState(false);
 
     const googleProvider = new GoogleAuthProvider();
     const auth = getAuth();
@@ -87,7 +87,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed
-    }, [])
+    }, [auth])
     return {
         user,
         error,

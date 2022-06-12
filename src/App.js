@@ -1,4 +1,4 @@
-import { Navigate, Routes } from 'react-router-dom';
+import { Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import './App.css';
 import { ContactUs } from './component/ContactUs/ContactUs';
@@ -20,7 +20,7 @@ function App() {
       <AuthProvider>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
 
           <Route path="/login" element={<Login />} />

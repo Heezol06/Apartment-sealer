@@ -31,7 +31,7 @@ export const ContactUs = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_vrmecof', 'template_brpumm7', e.target, 'user_rfgbua4a0L9B2swi5VGR9')
+        emailjs.sendForm('service_4a5pl32', 'template_xqd0d55', e.target, 'user_gMTsEXepOjxBr7dInIGlo')
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
